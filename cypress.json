@@ -1,0 +1,24 @@
+{
+  "chromeWebSecurity":false,
+  "baseUrl":"https://commissioning-accept.saltoks.com/",
+  "defaultCommandTimeout":30000,
+  "pageLoadTimeout":150000,
+  "responseTimeout": 50000,
+  "country_code": "NL",
+  "time_zone": "Europe/Amsterdam",
+  "email": "ragavi@my-clay.com",
+  "siteOwnerEmail": "ragavi+FEautomation@my-clay.com",
+  "tenant_id": "f9616ba5-443a-11e6-a8b9-0050568da097",
+  "business_type": "multi_tenant_housing",
+  "IQ_customer_reference": "Auto test IQ",
+  "IQ_activation_code": "0B7E2B334F7F",
+  "Lock_customer_reference": "Auto test lock",
+  "Lock_activation_code": "0167E70100007F",
+  "Rep_customer_reference": "Auto test repeater",
+  "Rep_activation_code": "01CD2714",
+  "installer_role_id":"922df89c-3e52-11e8-9f1c-0050568d6e36",
+  "installer_company_id": "6dfd13b6-9820-4da4-af64-dcbc5e2e4f7e",
+  "testFiles": [
+    "Commissioning-E2E/KS Site.js"
+  ]
+}

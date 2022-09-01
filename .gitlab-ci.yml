@@ -1,0 +1,25 @@
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+    - cache/Cypress
+test:
+  image: cypress/browsers:node14.15.0-chrome86-ff82
+  stage: test
+  script:
+    - npm ci
+    - npx browserslist@latest --update-db
+    - npm install cypress --save-dev
+    - npm i --save-dev cypress-localstorage-commands
+    - npm run cy:run
+  tags:
+    - clay-dta
+  artifacts:
+    when: always
+    paths:
+      - cypress/screenshots
+      - cypress/videos
+    expire_in: 1 day
