@@ -1,26 +1,23 @@
-#End to End cypress automation for commissioning application
+This repository contains the cypress tests written in javascript for BBlog web application.
 
-#Project details:
+CRUD articles operations are covered in each spec files.
 
-Application: https://commissioning-accept.saltoks.com/
-Hardware used: CATE QA03
-Environment: Accept
-Installer: ragavi+cate@my-clay.com
+Application: https://qa-task.backbasecloud.com/
 
+///Installation:
 
-#Master branch location:
+///Navigate to project root:
 
-Path: https://gitlab.com/claysolutions/clp/qa/commissioning-tests/-/tree/master/cypress/integration/Commissioning-E2E
+cd BBlog_Automation_Tests
 
+///Install dependencies:
 
-#Data config:
+download node js
+npm init and initialize the package.json file
+npm install cypress
 
-Input data are passed from: https://gitlab.com/claysolutions/clp/qa/commissioning-tests/-/blob/master/cypress/fixtures/datarep.json
+///Run the tests:
 
-
-#Pipeline config:
-
-Run: Headless mode
-Browser: Chrome
-
-npm run cy:run
+npm run cy:open or node_modules/.bin/cypress open to run spec files from testrunner
+or
+npm run cy:run or node_modules/.bin/cypress run to run all scripts in headless mode

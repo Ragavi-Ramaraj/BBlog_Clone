@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cy:run": "./node_modules/.bin/cypress run --browser chrome --headless",
-    "cy:open": "./node_modules/.bin/cypress run --browser chrome --headed"
+    "cy:testrunner": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run --browser chrome",
+    "cy:open": "./node_modules/.bin/cypress open --browser chrome"
   },
   "author": "ragavi",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^9.1.1",
+    "cypress": "^10.7.0",
+    "cypress-data-session": "^2.1.0",
     "cypress-localstorage-commands": "^1.6.1",
-    "cypress-plugin-retries": "^1.5.2",
     "start-server-and-test": "^1.14.0"
   }
 }
